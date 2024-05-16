@@ -17,23 +17,6 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="1">
-       <widget class="QSpinBox" name="spinBox">
-        <property name="minimum">
-         <number>8</number>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_length">
-        <property name="text">
-         <string>Password length:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
       <item row="3" column="1">
        <widget class="QCheckBox" name="checkBox_numbers">
         <property name="text">
@@ -41,27 +24,10 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QCheckBox" name="checkBox_upper">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_length">
         <property name="text">
-         <string>Uppercase</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Include uppercase letters</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Include symbols</string>
+         <string>Password length:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -78,13 +44,47 @@
         </property>
        </widget>
       </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="checkBox_upper">
+        <property name="text">
+         <string>Uppercase</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_upper">
+        <property name="text">
+         <string>Include uppercase letters</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
       <item row="3" column="0">
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="label_number">
         <property name="text">
          <string>Include numbers</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_symbols">
+        <property name="text">
+         <string>Include symbols</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="checkBox_symbols">
+        <property name="text">
+         <string>Symbols</string>
         </property>
        </widget>
       </item>
@@ -98,21 +98,33 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="QCheckBox" name="checkBox_symbols">
-        <property name="text">
-         <string>Symbols</string>
+      <item row="3" column="2">
+       <widget class="QSpinBox" name="spinBox_numbers"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QSpinBox" name="spinBox_upper"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spinBox_lower"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QSpinBox" name="spinBox_symbols"/>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QSpinBox" name="spinBox">
+        <property name="minimum">
+         <number>8</number>
         </property>
        </widget>
       </item>
-      <item row="5" column="0" colspan="2">
+      <item row="5" column="0" colspan="3">
        <widget class="QPushButton" name="pushButton">
         <property name="text">
          <string>Generate</string>
         </property>
        </widget>
       </item>
-      <item row="6" column="0" colspan="2">
+      <item row="6" column="0" colspan="3">
        <widget class="QLineEdit" name="lineEdit"/>
       </item>
      </layout>
